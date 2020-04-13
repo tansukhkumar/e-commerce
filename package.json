@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall":"npm rum bulid",
+    "postinstall":"npm run bulid",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./dist/index.js",
     "build": "tsc"
