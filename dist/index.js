@@ -6,7 +6,7 @@ var userRoutes_1 = require("./src/app/routes/userRoutes");
 var dotenv = require("dotenv");
 var db_1 = require("./src/app/db/db");
 var categoryRoutes_1 = require("./src/app/routes/categoryRoutes");
-var productRoutes_1 = require("./src/app/routes/productRoutes");
+var productRoutess_1 = require("./src/app/routes/productRoutess");
 // deploying code purpush
 var helmet = require("helmet");
 var compression = require("compression");
@@ -20,8 +20,8 @@ app.use(bodyParser.json());
 //app.get("/", (req,res) => res.send('this is get API'));
 app.use('/user', userRoutes_1.userRoute);
 app.use('/categories', categoryRoutes_1.categoryRoutes);
-app.use('/product', productRoutes_1.productRoutes);
-app.listen(3000, function () {
+app.use('/product', productRoutess_1.productRoutes);
+app.listen(process.env.PORT || 3000, function () {
     db_1.MongoConnect.connect().then(function (res) { return console.log('database connection done'); });
     console.log('server running on port 3000');
 });
