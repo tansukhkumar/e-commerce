@@ -4,7 +4,7 @@ import {userRoute} from './src/app/routes/userRoutes';
 import * as dotenv from 'dotenv';
 import { MongoConnect } from './src/app/db/db';
 import { categoryRoutes } from './src/app/routes/categoryRoutes';
-import { productRoutes } from './src/app/routes/productRoutes';
+import { productRoutes } from './src/app/routes/productRoutess';
 // deploying code purpush
 import * as helmet from 'helmet';
 import * as compression from 'compression';
