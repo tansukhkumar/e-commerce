@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall":"npm run bulid",
+    "postinstall":"npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./dist/index.js",
     "build": "tsc"
